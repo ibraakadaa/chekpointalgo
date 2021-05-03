@@ -1,4 +1,4 @@
-ALGORITHM 
+ALGORITHM ocu
 VAR
     numbers_of_words:INTEGER:=1;
     numbers_of_caracters:INTEGER:=0;
@@ -16,20 +16,21 @@ BEGIN
  
  Read(ch); 
       
-      if(ch=' ')
+      IF(ch=' ')
        numbers_of_words :=numbers_of_words +1;
-       END if
+       END_IF
 
     
  numbers_of_caracters := numbers_of_caracters + 1 ;
 
 
         
- if((ch='a') or (ch='e') or (ch='i') or (ch='o') or (ch='y'))
+ IF((ch='a') or (ch='e') or (ch='i') or (ch='o') or (ch='y'))
   numbers_of_voyelles=numbers_of_voyelles + 1;
-   END if
+   END_IF
   UNTIL(ch <>'.')
 
  Write ("number numbers_of_caracters" ,  numbers_of_caracters);
  Write("number of words",numbers_of_words);
  Write("numbers of voyelles ",numbers_of_voyelles); 
+ END
