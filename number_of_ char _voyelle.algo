@@ -28,7 +28,7 @@ BEGIN
  IF((ch='a') or (ch='e') or (ch='i') or (ch='o') or (ch='y'))
   numbers_of_voyelles=numbers_of_voyelles + 1;
    END_IF
-  UNTIL(ch <>'.')
+  UNTIL(ch ='.')
 
  Write ("number numbers_of_caracters" ,  numbers_of_caracters);
  Write("number of words",numbers_of_words);
